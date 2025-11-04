@@ -1,29 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<nav>
-  <div class="logo">&#128153; Quem Somos</div>  
-<ul>
-<li> <a href="index.html">Início</a>  </li>
-<li> <a href="Projeto.html">Quem Somos</a> </li>
-<li> <a href="cadastro.html">Cadastro de Voluntariado</a> </li> 
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+<header>
+ <nav>
+  <div class="logo">&#128153; Quem Somos</div>  
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>  
+<ul id="navMenu">  
+<li> <a href="index.html">Início</a></li>
+<li> <a href="Projeto.html" class="active">Quem Somos</a> </li>
+<li> <a href="cadastro.html">Formulário de Cadastro</a> </li> 
 </ul>
 </nav>
+  </header>
+  
+  
+  <section class="hero hero-projeto">  
+<div class="hero-content">  
+<h1>Quem Somos</h1>
+<p>Conheça um pouquinho da nossa tragetória</p>
+</div>
+</section>
 
-    <title>Quem Somos</title>
-  </head>
-<body>
-  <header>
-<p>Nosso grupo é formado por <strong>voluntários apaixonados por causas animais</strong>, unidos pelo compromisso de dar proteção e esperança àqueles que não podem se defender sozinhos. Acreditamos que <strong>cada vida importa</strong> e que a compaixão e empatia podem transformar o mundo. Um passo de cada vez, com um resgate de cada vez.</p>
+
+  <main>
+<p>Nosso grupo é formado por <strong>voluntários apaixonados por causas animais</strong>, unidos pelo compromisso de dar proteção e esperança àqueles que não podem se defender sozinhos. Acreditamos que <strong>cada vida importa</strong> e que a compaixão e empatia podem transformar o mundo. <em>Um passo de cada vez, com um resgate de cada vez.</em></p>
+
   <p>Trabalhamos com <strong>transparência, responsabilidade e empatia,</strong> buscando o apoio da comunidade através de parcerias, voluntários, doações e lares adotivos que ajudem a construir um futuro melhor para cães, gatos e outros animais abandonados. </p>
-  <p> Nosso diferencial está no cuidado individual: Cada animal resgatado recebe atenção única, como merece.  
+  
+  <p> Nosso diferencial está no cuidado individual: <em>Cada animal resgatado recebe atenção única, como merece. </em> </p> 
+  
 <p><strong>Não somos apenas uma ONG. Somos um lar temporário, uma segunda chance e, muitas vezes, a primeira demonstração real de carinho na vida desses animaizinhos.</strong></p>
-</header>
+</main>
+
+<section class="contact">  
+<h2>Caso tenha interesse, nos contate!</h2>
+<address>
+<p><strong>Endereço:</strong>Rua Agnaldo Luis, 474 - <em>Bairro:</em> Jardim Eldorado - <em>Cidade:</em> Caxias do Sul</p>
+<p> <strong>Telefone:</strong>(54) 91889-8493</p>
+<p> <strong>E-mail:</strong> Amor.animal@Organizacao.org.com</p>
+</address>
+</section>
+
 <footer>
 <p>&copy; 2025 Proteção aos Animais. Todos os direitos reservados.</p>
 <p>Feito com amor&#10084;&#65039; para transformar vidas</p>
 </footer>
+<script src="script.js"></script> 
 </body>
 </html>

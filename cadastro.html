@@ -7,29 +7,31 @@
 <body>
 <!-- Header --> 
 <header>  
-<div class="logo">&#128153; Voluntários</div>  
 <nav>
-<ul>
-<li> <a href="index.html">Início</a>  </li>
+<div class="logo">&#128153; Formulário</div>  
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <ul id="navMenu"> 
+<li> <a href="index.html">Início</a></li>
 <li> <a href="Projeto.html">Quem Somos</a> </li>
-<li> <a href="cadastro.html">Cadastro de Voluntariado</a> </li> 
+<li> <a href="cadastro.html" class="active">Formulário de Cadastro</a> </li> 
 </ul>
 </nav>
 </header>  
+
 <section class="hero hero-cadastro">  
 <div class="hero-content">  
-<h1>Cadastre-se como Voluntário</h1>  
-<p>Junte-se a nós e faça a diferença na vida de muitos animaizinhos através do voluntariado.</p>  
+<h1>Cadastre-se</h1>  
+<p>Junte-se a nós e faça a diferença na vida de muitos animaizinhos.</p>  
 </div>
 </section>  
 <!-- Formulário de Cadastro -->
 <main>
 <section class="signup-section">
-<h2>Cadastro de Voluntários</h2>
-<div class="sucess-message" id="sucessMensage">
-Cadastro realizado com sucesso!
+<h2>Formulário de Cadastro</h2>
+<div class="sucess-message" id="sucessMensage"> ✅ Cadastro realizado com sucesso! Entraremos em contato em breve.
 </div>
 <form id="volunteerForm" onsubmit="handleSubmit(event)"> 
+
 <fieldset>
 <legend>Dados Pessoais</legend>
 <div class="form-group">
@@ -52,8 +54,9 @@ Cadastro realizado com sucesso!
 <div>
 <fieldset>
 <legend>Disponibilidade</legend>
-<div class="form-group
-<label for="Disponibilidade">Quando você pode atuar como voluntário?</label> <select id="Disponibilidade" name="Disponibilidade" required>
+<div class="form-group>
+<label for="disponibilidade"> Quando você pode atuar como voluntário? *</label> 
+<select id="disponibilidade" name="disponibilidade" required>
 <option value="">Selecione...</option>
 <option value="Final-de-Semana">Final de Semana</option>
 <option value="Dias-Uteis">Dias uteis</option>
@@ -61,17 +64,29 @@ Cadastro realizado com sucesso!
 <option value="Feriado">Feriado</option>
 </select>
 </div>
+
+ <div class="form-group"> <label for="area-interesse">Área de Interesse *</label> <select id="area-interesse" name="area-interesse" required> 
+ <option value="">Selecione...</option> <option value="Adoção">Adoção</option> <option value="Lar Temporário">Lar Temporário</option> 
+  <option value="Apadrinhe um Animal">Apadrinhe um Animal</option> 
+  <option value="Doação">Doação</option> 
+  <option value="Qualquer área">Qualquer área</option> 
+  </select> 
+  </div> 
 </fieldset>
+ <button type="submit" class="btn-primary">Enviar Cadastro</button>
 </form>
-</section>
+
+<section class="voluntarios-lista"> 
+  <h2>Cadastros</h2> 
+  <div id="tabelaVoluntarios"> </div> <button onclick="limparTabela()"class="btn-second" >Limpar Tabela</button> 
+  </section>
+  </section>
 </main> 
-<!--Footer--> 
+<!-- Footer --> 
 <footer>
-<p>&copy; 2025 Proteção aos Animais. Todos os direitos reservados.</p>
+<p> &copy; 2025 Proteção aos Animais. Todos os direitos reservados.</p>
 <p>Feito com amor&#10084;&#65039; para transformar vidas</p>
 </footer>
 <script src="script.js"></script>
 </body>
 </html> 
-
-
